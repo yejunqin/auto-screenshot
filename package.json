@@ -1,0 +1,16 @@
+{
+  "name": "screenshot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "date-fns": "^2.0.1",
+    "pkg": "^4.4.0",
+    "screenshot-desktop": "^1.9.0"
+  },
+  "scripts": {
+    "test": "node ./src/index.js",
+    "build": "pkg --targets node10-win-x64 --out-dir=dist ./src/index.js",
+    "buildTest": "pkg --targets node10-win-x64 --out-dir=dist ./src/test.js"
+  }
+}
